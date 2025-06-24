@@ -1,6 +1,6 @@
 # 🎭 Artistly.com - Frontend Developer Test Assignment
 
-A functional, mobile-responsive web demo of **Artistly.com**, a fictional performing artist booking platform built using **Next.js 13 App Router**, **React**, **Tailwind CSS**, and **ShadCN UI**.
+A functional, mobile-responsive web demo of **Artistly.com**, a fictional performing artist booking platform built using **Next.js 15 App Router**, **React**, **Tailwind CSS**, and **ShadCN UI**.
 
 ---
 
@@ -11,13 +11,13 @@ Artistly.com is a platform designed for **Event Planners** and **Artist Managers
 - **Event Planners** can browse artist profiles, apply filters, and send booking requests.
 - **Artist Managers** can onboard talent and view submission data via a dashboard.
 
-This assignment is frontend-only and uses **static JSON / mock data**, with a focus on component architecture, form logic, state management, and responsive layout.
+This assignment is frontend-only and uses **mock data**, with a focus on component architecture, form logic, state management, and responsive layout.
 
 ---
 
 ## 🔧 Tech Stack
 
-- [✅] **Next.js 13** with App Router
+- [✅] **Next.js 15** with App Router
 - [✅] **React Functional Components + Hooks**
 - [✅] **Tailwind CSS** for utility-first styling
 - [✅] **ShadCN UI** and custom components
