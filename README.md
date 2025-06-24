@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎭 Artistly.com - Frontend Developer Test Assignment
 
-## Getting Started
+A functional, mobile-responsive web demo of **Artistly.com**, a fictional performing artist booking platform built using **Next.js 13 App Router**, **React**, **Tailwind CSS**, and **ShadCN UI**.
 
-First, run the development server:
+---
+
+## 📌 Project Overview
+
+Artistly.com is a platform designed for **Event Planners** and **Artist Managers** to connect.
+
+- **Event Planners** can browse artist profiles, apply filters, and send booking requests.
+- **Artist Managers** can onboard talent and view submission data via a dashboard.
+
+This assignment is frontend-only and uses **static JSON / mock data**, with a focus on component architecture, form logic, state management, and responsive layout.
+
+---
+
+## 🔧 Tech Stack
+
+- [✅] **Next.js 13** with App Router
+- [✅] **React Functional Components + Hooks**
+- [✅] **Tailwind CSS** for utility-first styling
+- [✅] **ShadCN UI** and custom components
+- [✅] **Lucide Icons**
+- [✅] **Form Validation** using controlled inputs
+- [✅] **State Management** via `useState` and `useEffect`
+
+---
+
+## 📄 Pages Implemented
+
+| Page                  | Description                                                    |
+| --------------------- | -------------------------------------------------------------- |
+| **Homepage**          | Platform overview with category cards and CTA                  |
+| **Artist Listing**    | Searchable, filterable artist grid (category, location, price) |
+| **Artist Onboarding** | Multi-section form with validation, image upload, multi-select |
+| **Manager Dashboard** | Table & card views of onboarded artists + stats (bonus)        |
+
+---
+
+## 🎯 Features Highlight
+
+- ✅ **Responsive Layout** (mobile-first, adaptive grid)
+- ✅ **Filter Logic** (category, location, price)
+- ✅ **Form Validation** (required fields, controlled inputs)
+- ✅ **Upload UI** for artist profile image (optional)
+- ✅ **Dashboard Stats** (bookings, ratings, artist status)
+- ✅ **Table ↔ Card View Toggle**
+- ✅ **Search by Name + Filter by Category**
+- ✅ **Reusable UI components** (Cards, Form Inputs, Buttons)
+- ✅ **SEO-friendly Head Tags + Accessible Form Labels**
+
+---
+
+## 🚀 Running Locally
 
 ```bash
+git clone https://github.com/Annany2002/frontend-assignment.git
+cd frontend-assignment
+
+# Install dependencies
+npm install
+
+# Run dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# App runs at http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🙌 Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**\[Annany Vishwakarma]**
+[GitHub](https://github.com/Annany2002)

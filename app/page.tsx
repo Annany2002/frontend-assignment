@@ -45,8 +45,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="relative">
             {/* Background decorative elements */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-3xl transform rotate-1"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl transform -rotate-1"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 rounded-3xl transform rotate-1" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl transform -rotate-1" />
 
             <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-16 shadow-xl">
               <div className="text-center max-w-4xl mx-auto">
