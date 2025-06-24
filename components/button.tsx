@@ -22,7 +22,7 @@ const Button = ({
     secondary:
       "bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-gray-500",
     outline:
-      "border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-gray-500",
+      "border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-gray-500 dark:text-white dark:hover:bg-gray-800",
   };
 
   const sizes = {

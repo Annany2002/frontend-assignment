@@ -29,17 +29,17 @@ export default function Explore() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 dark:from-gray-900 dark:via-black dark:to-gray-900">
       <Header />
 
       <div className="pt-20 pb-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Page Header */}
           <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 dark:text-white">
               Explore Artists
             </h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-200">
               Find the perfect performer for your next event
             </p>
           </div>
@@ -66,13 +66,15 @@ export default function Explore() {
               <div
                 className={`${
                   isFilterOpen ? "block" : "hidden"
-                } lg:block bg-white rounded-lg shadow-md p-6`}
+                } lg:block bg-white rounded-lg shadow-md p-6 dark:bg-gray-900 dark:border`}
               >
-                <h3 className="font-semibold text-gray-900 mb-4">Filter by</h3>
+                <h3 className="font-semibold text-gray-900 mb-4 dark:text-white">
+                  Filter by
+                </h3>
 
                 {/* Search */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 dark:text-white">
                     Search
                   </label>
                   <div className="relative">
@@ -92,13 +94,13 @@ export default function Explore() {
 
                 {/* Category Filter */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 dark:text-white">
                     Category
                   </label>
                   <select
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-900"
                   >
                     {categories.map((category) => (
                       <option key={category} value={category}>
@@ -110,13 +112,13 @@ export default function Explore() {
 
                 {/* Location Filter */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 dark:text-white">
                     Location
                   </label>
                   <select
                     value={selectedLocation}
                     onChange={(e) => setSelectedLocation(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-900"
                   >
                     {locations.map((location) => (
                       <option key={location} value={location}>
@@ -128,13 +130,13 @@ export default function Explore() {
 
                 {/* Price Range Filter */}
                 <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-gray-700 mb-2 dark:text-white">
                     Price Range
                   </label>
                   <select
                     value={selectedPrice}
                     onChange={(e) => setSelectedPrice(e.target.value)}
-                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                    className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent dark:bg-gray-900"
                   >
                     {priceRanges.map((range) => (
                       <option key={range} value={range}>
@@ -150,14 +152,14 @@ export default function Explore() {
             <div className="flex-1">
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {filteredArtists.length === 0 ? (
-                  <p className="text-center col-span-full text-gray-500">
+                  <p className="text-center col-span-full text-gray-500 dark:text-white">
                     No artists match the selected filters.
                   </p>
                 ) : (
                   filteredArtists.map((artist, index) => (
                     <div
                       key={artist.id}
-                      className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+                      className="bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
                       <div className="p-6">
@@ -166,10 +168,10 @@ export default function Explore() {
                             {artist.image}
                           </div>
                           <div>
-                            <h3 className="font-semibold text-gray-900">
+                            <h3 className="font-semibold text-gray-900 dark:text-white">
                               {artist.name}
                             </h3>
-                            <p className="text-sm text-gray-600">
+                            <p className="text-sm text-gray-600 dark:text-gray-200">
                               {artist.category}
                             </p>
                           </div>
@@ -177,26 +179,26 @@ export default function Explore() {
 
                         <div className="space-y-2 mb-4">
                           <div className="flex justify-between">
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm dark:text-white text-gray-600">
                               Price Range:
                             </span>
-                            <span className="text-sm font-medium text-gray-900">
+                            <span className="text-sm dark:text-gray-200 font-medium text-gray-900">
                               {artist.feeRange}
                             </span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm dark:text-white text-gray-600">
                               Location:
                             </span>
-                            <span className="text-sm font-medium text-gray-900">
+                            <span className="text-sm dark:text-gray-200 font-medium text-gray-900">
                               {artist.city}
                             </span>
                           </div>
                           <div className="flex justify-between">
-                            <span className="text-sm text-gray-600">
+                            <span className="text-sm text-white dark:text-white">
                               Rating:
                             </span>
-                            <span className="text-sm font-medium text-gray-900">
+                            <span className="text-sm dark:text-gray-200 font-medium text-gray-900">
                               ⭐ {artist.rating}
                             </span>
                           </div>

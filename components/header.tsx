@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./theme-toggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-transparent backdrop-blur-sm border-b border-gray-200 z-50 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -41,7 +42,7 @@ const Header = () => {
                 className={`font-medium transition-colors duration-200 ${
                   isActive(item.path)
                     ? "text-purple-600"
-                    : "text-gray-700 hover:text-purple-600"
+                    : "text-gray-700 hover:text-purple-600 dark:text-white"
                 }`}
               >
                 {item.name}
@@ -56,12 +57,14 @@ const Header = () => {
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
+
+          <ThemeToggle />
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200 animate-fade-in">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-4 items-center">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -76,6 +79,7 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <ThemeToggle />
             </nav>
           </div>
         )}

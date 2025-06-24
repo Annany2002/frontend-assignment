@@ -121,3 +121,34 @@ export const extendCategories = [
   "Solo Artist",
   "Other",
 ];
+
+export const homePageCategories = [
+  {
+    title: "Singers",
+    description: "Professional vocalists for any occasion",
+    artistCount: 150,
+    icon: "🎤",
+    gradient: "from-purple-500 to-purple-600",
+  },
+  {
+    title: "Dancers",
+    description: "Dynamic performers to energize your event",
+    artistCount: 89,
+    icon: "💃",
+    gradient: "from-pink-500 to-pink-600",
+  },
+  {
+    title: "Musicians",
+    description: "Instrumental artists across all genres",
+    artistCount: 200,
+    icon: "🎸",
+    gradient: "from-blue-500 to-blue-600",
+  },
+  {
+    title: "Comedians",
+    description: "Stand-up acts to entertain your guests",
+    artistCount: 67,
+    icon: "🎭",
+    gradient: "from-orange-500 to-orange-600",
+  },
+];

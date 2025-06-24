@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-transparent text-white py-8 border-t">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
@@ -11,7 +11,7 @@ const Footer = () => {
               Artistly.com
             </span>
           </div>
-          <p className="text-gray-400">
+          <p className="text-gray-400 dark:text-gray-200">
             © 2024 Artistly.com. All rights reserved. Connecting event planners
             with amazing artists.
           </p>
